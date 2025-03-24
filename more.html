@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>More About My Skills</title>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+	<style>
+		
+		body {
+			background: floralwhite;
+			margin: 0;
+			font-family: Arial, sans-serif;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		
+		nav {
+			background-color: hotpink;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			padding: 15px 0;
+			position: fixed; /* Fixed at the top */
+			top: 0;
+			left: 0;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			z-index: 1000;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+
+		nav ul li {
+			margin: 0 20px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: whitesmoke;
+			font-size: 20px;
+			padding: 5px 10px;
+		}
+
+		nav ul li a:hover {
+			background: white;
+			color: hotpink;
+			border-radius: 10px;
+		}
+
+		
+		.main-content {
+			margin-top: 90px; 
+			text-align: center;
+			padding: 20px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		h1 {
+			font-family: 'Dancing Script', cursive;
+			color: rebeccapurple;
+			margin-bottom: 20px;
+		}
+
+		
+		.content {
+			border: 5px solid blanchedalmond;
+			max-width: 550px;
+			padding: 40px;
+			background: lightblue;
+			margin-top: 20px;
+			border-radius: 9px;
+			line-height: 30px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			text-align: left;
+		}
+
+		h2 {
+			color: darkblue;
+		}
+
+		
+		.content ul {
+			list-style-type: square;
+			padding-left: 20px;
+		}
+
+		.content ul li {
+			font-size: 18px;
+			color: darkslategray;
+			margin-bottom: 8px;
+		}
+
+		
+		@media (max-width: 600px) {
+			nav ul {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			nav ul li {
+				margin: 10px 0;
+			}
+
+			.content {
+				max-width: 90%;
+				padding: 30px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	
+	<nav>
+		<ul>
+			<li><a href="portfolio.html">Home</a></li>
+			<li><a href="aboutme.html">About Me</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="more.html">More</a></li>
+		</ul>
+	</nav>
+
+	<!-- Main Content -->
+	<div class="main-content">
+		<h1>About My Skills</h1>
+	
+		<div class="content">
+			<h2>💻 Web Development</h2>
+			<ul>
+				<li>HTML (Intermediate)</li>
+				<li>CSS (Intermediate)</li>
+			</ul>
+
+			<h2>📊 Productivity Tools</h2>
+			<ul>
+				<li>Microsoft Excel (Intermediate - Tables, Charts, Formulas)</li>
+				<li>PowerPoint (Intermediate - Presentations & Animations)</li>
+				<li>Microsoft Word (Intermediate)</li>
+			</ul>
+
+			<h2>💡 Soft Skills</h2>
+			<ul>
+				<li>Problem-Solving</li>
+				<li>Communication</li>
+				<li>Creativity</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

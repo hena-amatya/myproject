@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    
+    body {
+      background-image: url(bgimage.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  
+    nav {
+      background-color: hotpink;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: fixed; 
+      top: 0;
+      left: 0;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 20px;
+      padding: 8px 12px;
+    }
+
+    nav ul li a:hover {
+      background: white;
+      color: hotpink;
+      border-radius: 10px;
+    }
+
+    
+    .main-content {
+      margin-top: 90px;
+      text-align: center;
+      padding: 20px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px;
+      width: 90%;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .container p {
+      font-size: 30px;
+      font-weight: bold;
+      font-family: "Dancing Script", cursive;
+      color: black;
+    }
+
+    
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .container {
+        font-size: 20px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="more.html">More</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <div class="container">
+      <p>
+        Code. Design. Transform. 💻 <br> 
+        In this digital world, creativity is limitless. 🚀 <br> 
+        Let's innovate, break barriers, and shape the future! 🌟<br><br>
+        Hey there! 👋<br> 
+        Welcome to my portfolio!<br><br>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

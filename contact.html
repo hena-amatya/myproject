@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Me</title>
+
+	
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+	<style>
+		
+		body {
+			background-color: palegoldenrod;
+			font-size: 20px;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+	
+		nav {
+			background-color: hotpink;
+			display: flex;
+			justify-content: center;
+			padding: 15px 0;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+
+		nav ul li {
+			margin: 0 20px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: whitesmoke;
+			font-size: 20px;
+			padding: 5px 10px;
+		}
+
+		nav ul li a:hover {
+			background: white;
+			color: hotpink;
+			border-radius: 10px;
+		}
+
+		/* Page Heading */
+		.heading {
+			text-align: center;
+			margin-top: 40px;
+		}
+
+		h1 {
+			font-family: 'Dancing Script', cursive;
+		}
+
+		
+		.contact-section {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			max-width: 900px;
+			margin: 50px auto;
+			gap: 20px;
+		}
+
+		.contact-container {
+			background-color: hotpink;
+			padding: 45px;
+			border-radius: 15px;
+			width: 50%;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.contact-container form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.contact-container label {
+			font-weight: bold;
+			color: white;
+			margin-top: 10px;
+		}
+
+		input, textarea {
+			width: 90%;
+			padding: 10px;
+			margin: 10px 0;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		button {
+			background-color: deeppink;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 15px;
+			border: none;
+			color: white;
+			font-size: 18px;
+			width: 100%;
+			max-width: 250px;
+		}
+
+		button:hover {
+			background-color: hotpink;
+		}
+
+		
+		.paragraph {
+			width: 45%;
+			background-color: lightblue;
+			padding: 45px;
+			color: white;
+			font-size: 18px;
+			border-radius: 15px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		.paragraph p {
+			font-size: 25px;
+			color: rebeccapurple;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+
+		
+		.contact-info {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			text-align: center;
+		}
+
+		.contact-info li {
+			color: royalblue;
+			font-size: 18px;
+			margin-bottom: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.contact-info a {
+			text-decoration: none;
+			color: royalblue;
+			font-weight: bold;
+		}
+
+		.contact-info a:hover {
+			color: hotpink;
+		}
+
+
+		@media (max-width: 768px) {
+			.contact-section {
+				flex-direction: column;
+				align-items: center;
+			}
+			.contact-container, .paragraph {
+				width: 90%;
+			}
+			nav ul {
+				flex-direction: column;
+				align-items: center;
+			}
+			nav ul li {
+				margin-bottom: 10px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="aboutme.html">About Me</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="more.html">More</a></li>
+		</ul>
+	</nav>
+
+	<div class="heading">
+		<h1>Get in Touch with Me</h1>
+	</div>
+
+	
+	<div class="contact-section">
+		<!-- Contact Form -->
+		<div class="contact-container">
+			<form action="submit_form.php" method="POST">
+				<label for="full_name">Full Name</label>
+				<input type="text" id="full_name" name="full_name" placeholder="Your Full Name" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Your E-mail" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="4" placeholder="Write message here..." required></textarea>
+
+				<button type="submit">Submit →</button>
+			</form>
+		</div>
+
+	
+		<div class="paragraph">
+			<p>Contact Information</p>
+			<ul class="contact-info">
+				<li>📞 +977 1 123 4567</li>
+				<li>✉️ <a href="mailto:henaamatya802@gmail.com">henaamatya802@gmail.com</a></li>
+				<li>📍 Balaju Height, Kathmandu</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
